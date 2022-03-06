@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulaire.css">
+    <title>Streaming Cinema</title>
+</head>
+
+<body>
+    <header>
+        <h1><img src="./asset/LogoSample_ByTailorBrands-removebg-preview.png" alt="image"> Films, séries TV et bien plus en illimité.</h1>
+    </header>
+
+    <main>
+<section>
+    <figure>
+                    <img src="./asset/avengers-infinity-war-poster-officiel.png" alt="image">
+                    <img src="./asset/avengers-ultron.png" alt="image">
+                    <img src="./asset/Joker-755x1024.png" alt="image">
+                    <img src="./asset/poster-batman-2021-2064381.png" alt="image">
+                    <img src="./asset/Ragnarok.png" alt="image">
+    </figure>   
+</section>
+
+    <h2> Remplissez le formulaire </h2>
+
+    <form action="formulaire.html" method="post">
+<div>
+        <label for="nom">Nom</label> <br>
+        <input type="text" id="nom" name="nom" placeholder="Nom" aria-required="true"  autofocus>
+</div>
+<div>
+        <label for="prenom">Prénom</label> <br>
+        <input type="text" id="prenom" name="prenom" placeholder="Prénom" aria-required="true">
+</div>
+<div>
+        <label for="email">Email</label> <br>
+        <input type="text" id="email" name="email" placeholder="Email" aria-required="true">
+</div>
+<div>
+              <label>Pays</label> <br>
+              <select name="pays" id="liste-pays">
+              <option value="">Selectionnez votre pays</option>
+              </select>
+</div>
+
+<div>
+              <label>Ville</label> <br>
+              <select name="ville" id="list-ville">
+              <option value="">Selectionnez votre ville</option>
+    </select>
+</div>
+
+        <input type="submit" value="Valider" aria-label="cliquez pour envoyer">
+
+    </form>
+
+
+    </main>
+    <footer>&copy; - Streaming 2022 </footer>
+</body>
+</html>

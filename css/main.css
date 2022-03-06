@@ -1,0 +1,10 @@
+html {
+	font-size: 62.5%;
+}
+body {
+	background-color:#fff;
+	color: #000;
+	font-family: "Century Gothic", helvetica, arial, sans-serif;
+	font-size: 1.4em; /* equiv 14px */
+	line-height: 1.5; /* adapt to your design */
+}
