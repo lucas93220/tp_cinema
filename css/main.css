@@ -1,10 +1,94 @@
 html {
 	font-size: 62.5%;
 }
+/*couleurs page*/
+:root{
+    --color-default: #000000;
+    --color-text: #ffffff;
+}
+/*fond de la page*/
 body {
-	background-color:#fff;
-	color: #000;
+	background-color:var(--color-default);
+	color: var(--color-text);
 	font-family: "Century Gothic", helvetica, arial, sans-serif;
 	font-size: 1.4em; /* equiv 14px */
-	line-height: 1.5; /* adapt to your design */
+	line-height: 1.5; 
+    padding: 1.0rem;
+    border: solid .1rem var(--color-text);
+    margin: 3rem;
+}
+/*Grand titre*/
+body header h1{
+    text-align: center;
+    padding: 2.0rem;
+    border: solid .1rem var(--color-text);
+    margin-left: 60rem;
+    margin-right: 60rem;
+}
+/*LOGO*/
+header img{
+position: absolute;
+top: 4.2rem;
+left: 40.0rem;
+width: 100px;
+display: block;
+text-align: left;
+}
+/*Sous titre*/
+section h2{
+    text-align: center;
+}
+/*Texte*/
+section p{
+    text-align: center;
+    padding: 1.0rem;
+    border: solid .1rem var(--color-text);
+}
+/*Miniarures de films*/
+ul li{
+    padding: 1.0rem;
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1rem;
+}
+/*Disposition du coeur de la page*/
+main {
+    
+    margin: 0 25%;
+    text-align: center;
+   
+}
+/*LE BOUTON*/
+.button {
+    display: inline-block;
+    background-color: #0099ff;
+    border: 4px double #0099ff;
+    color: #ffffff;
+    text-align: center;
+    font-size: 23px;
+    padding: 7px;
+    width: 400px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    
+  }
+ 
+.button:hover, .button:focus {
+    background: #0099ff;
+    text-shadow: 0 2px rgb(0, 0, 0);
+    border: 1px solid #0099ff;
+    box-shadow: 0 0 15px #c9c8c8;
+
+}
+ 
+.button:active {
+    background: #0099ff;
+    text-shadow: 0 2px rgb(0, 0, 0);
+    border: 1px solid #0099ff;
+}
+/*2022 streaming*/
+footer{
+    margin-top: 10rem;
+    text-align: center;
 }
