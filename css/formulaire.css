@@ -1,6 +1,9 @@
 html {
 	font-size: 62.5%;
+    box-sizing: initial;
+    text-align: center;
 }
+
 /*couleurs page*/
 :root{
     --color-default: #1d1c1c;
@@ -31,7 +34,6 @@ header img{
 	height: 150px;
 	width: 150px;
 	position: static;
-	margin-left: 84rem;
 	top: 10px;
  }
 
@@ -47,13 +49,13 @@ figure{
 	overflow: hidden;
 }
 
-figure li{
+figure figcaption{
 	padding: 4rem;
     display:block; 
 	
 }
 
-figure li img{
+figure figcaption img{
 	border-radius: 5px;
     box-shadow: 0 0 10px #000000;
 	margin: 1rem;
@@ -61,7 +63,7 @@ figure li img{
 
 form input, select{
 	display: inline-block;
-    background-color: #1d1c1c;
+    background-color: #423e3e;
     border: 4px outset #0099ff;
     color: #757575;
     font-size: 13px;

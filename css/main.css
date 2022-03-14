@@ -1,6 +1,9 @@
 html {
 	font-size: 62.5%;
+    box-sizing: initial;
+    text-align: center;
 }
+
 /*couleurs page*/
 :root{
     --color-default: #1d1c1c;
@@ -22,7 +25,7 @@ header img{
     height: 150px;
 	width: 150px;
 	position: static;
-	margin-left: 84rem;
+	
 	top: 10px;
   
 }
@@ -60,13 +63,13 @@ figure{
     
 }
 
-figure li{
+figure figcaption{
     padding: 4rem;
     display:block; 
     width: calc(100% / 1.2);  
 }
 
-figure li img{
+figure figcaption img{
     border-radius: 5px;
     box-shadow: 0 0 10px #000000;
     margin: 5px;
