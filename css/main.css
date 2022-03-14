@@ -5,72 +5,87 @@ html {
 :root{
     --color-default: #1d1c1c;
     --color-text: #e9dddd;
+    --color-primary : #0099ff;
 }
 /*fond de la page*/
 body {
 	background-color:var(--color-default);
 	color: var(--color-text);
 	font-family: "Century Gothic", helvetica, arial, sans-serif;
-	font-size: 1.4em; /* equiv 14px */
-	line-height: 1.5; 
-    padding: 1.0rem;
-    border: solid .1rem var(--color-text);
+	font-size: 1.4rem; 
+	line-height: 3rem; 
     margin: 3rem;
 }
-/*Grand titre*/
-body header h1{
-    text-align: center;
-    padding: 2.0rem;
-    border: solid .1rem var(--color-text);
-    margin-left: 60rem;
-    margin-right: 60rem;
-}
+
 /*LOGO*/
 header img{
-position: absolute;
-top: 5rem;
-left: 40.0rem;
-width: 130px;
-display: block;
-text-align: left;
+    height: 150px;
+	width: 150px;
+	position: static;
+	margin-left: 84rem;
+	top: 10px;
+  
 }
+
+header h1{
+    text-align: center;
+    position: relative;
+    padding-top: 2.0rem;
+    padding-bottom: 2rem;
+}
+
 /*Sous titre*/
 section h2{
     text-align: center;
+    padding-bottom: 2rem;
 }
+
 /*Texte*/
 section p{
     text-align: center;
-    padding: 1.0rem;
-    border: solid .1rem var(--color-text);
+    padding: 2.0rem;
+    border-radius: 5px;
+    border: outset .2rem var(--color-primary);
 }
-/*Miniarures de films*/
-ul li{
-    padding: 1.0rem;
-    display:grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 1rem;
-}
-/*Disposition du coeur de la page*/
-main {
-    
-    margin: 0 25%;
+
+main{
     text-align: center;
-   
+    margin: 0 25%;
 }
+
+/*Miniarures de films*/
+figure{
+    overflow: hidden;
+    padding-left: 3rem;
+    
+}
+
+figure li{
+    padding: 4rem;
+    display:block; 
+    width: calc(100% / 1.2);  
+}
+
+figure li img{
+    border-radius: 5px;
+    box-shadow: 0 0 10px #000000;
+    margin: 5px;
+}
+
 /*LE BOUTON*/
 .button {
     display: inline-block;
     background-color: #0099ff;
-    border: 4px double #0099ff;
+    border: 4px outset #0099ff;
     color: #ffffff;
     text-align: center;
     font-size: 23px;
     padding: 7px;
     width: 400px;
+    border-radius: 5px;
     transition: all 0.5s;
     cursor: pointer;
-    margin: 5px;
+    margin: 5rem;
     
   }
  
@@ -87,8 +102,10 @@ main {
     text-shadow: 0 2px rgb(0, 0, 0);
     border: 1px solid #0099ff;
 }
+
 /*2022 streaming*/
 footer{
     margin-top: 10rem;
     text-align: center;
 }
+

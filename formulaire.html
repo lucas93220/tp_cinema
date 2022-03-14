@@ -11,55 +11,62 @@
 
 <body>
     <header>
-        <h1><img src="./asset/LogoSample_ByTailorBrands__3_-removebg-preview.png" alt="image"> Films, séries TV et bien plus en illimité.</h1>
+      <div>  <img src="./asset/LogoSample_ByTailorBrands__3_-removebg-preview.png" alt="image"></div>
+         <h1>Films, séries TV et bien plus en illimité.</h1>
     </header>
 
-    <main>
-    <figure>
-                    <img src="./asset/avengers-infinity-war-poster-officiel.png" alt="image">
-                    <img src="./asset/avengers-ultron.png" alt="image">
-                    <img src="./asset/Joker-755x1024.png" alt="image">
-                    <img src="./asset/poster-batman-2021-2064381.png" alt="image">
-                    <img src="./asset/Ragnarok.png" alt="image">
-    </figure>   
+<main>
+    
+<figure>
+    <li>
+                    <img src="./asset/Joker-755x1024.png" alt="img">
+                    <img src="./asset/poster-batman-2021-2064381.png" alt="img">
+                    <img src="./asset/avengers-ultron.png" alt="img">
+                    <img src="./asset/avengers-infinity-war-poster-officiel.png" alt="img">
+                    <img src="./asset/Ragnarok.png" alt="img">
+    </li>                
+</figure>
 
+<section>
     <h2> Remplissez le formulaire </h2>
+</section>
 
-    <form action="formulaire.html" method="post">
-<div>
+
+<form action="formulaire.html" method="post">
+     <div>
         <label for="nom">Nom</label> <br>
         <input type="text" id="nom" name="nom" placeholder="Nom" aria-required="true"  autofocus>
-</div>
-<div>
+    </div>
+    <div>
         <label for="prenom">Prénom</label> <br>
         <input type="text" id="prenom" name="prenom" placeholder="Prénom" aria-required="true">
-</div>
-<div>
+    </div>
+    <div>
         <label for="email">Email</label> <br>
         <input type="text" id="email" name="email" placeholder="Email" aria-required="true">
-</div>
-<div>
+    </div>
+    <div>
               <label>Pays</label> <br>
-              <select name="pays" id="liste-pays">
-              <option value="">Selectionnez votre pays</option>
-              </select>
-</div>
+<select name="pays" id="liste-pays">
+              <option value="option">Selectionnez votre pays</option>
+</select>
+    </div>
 
-<div>
+    <div>
               <label>Ville</label> <br>
-              <select name="ville" id="list-ville">
-              <option value="">Selectionnez votre ville</option>
+    <select name="ville" id="list-ville">
+              <option value="option">Selectionnez votre ville</option>
     </select>
-</div>
-
-
+    </div>
 
 </form>
 
     <section>
         <a href="./index.html"><input type="submit" class="button" value="Valider" aria-label="valider"></a>
     </section>
-    </main>
-    <footer>&copy; - Streaming 2022 </footer>
+</main>
+    <footer>
+        &copy; - Streaming 2022 
+    </footer>
 </body>
 </html>
