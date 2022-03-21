@@ -45,17 +45,17 @@ main{
 	text-align: center;
 }
 
-figure{
+ul{
 	overflow: hidden;
 }
 
-figure figcaption{
+ul li{
 	padding: 4rem;
     display:block; 
 	
 }
 
-figure figcaption img{
+ul li img{
 	border-radius: 5px;
     box-shadow: 0 0 10px #000000;
 	margin: 1rem;

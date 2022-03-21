@@ -17,7 +17,7 @@ body {
 	font-family: "Century Gothic", helvetica, arial, sans-serif;
 	font-size: 1.4rem; 
 	line-height: 3rem; 
-    margin: 3rem;
+    margin: 0.5rem;
 }
 
 /*LOGO*/
@@ -46,9 +46,10 @@ section h2{
 /*Texte*/
 section p{
     text-align: center;
-    padding: 2.0rem;
+    padding: 3.0rem;
     border-radius: 5px;
     border: outset .2rem var(--color-primary);
+
 }
 
 main{
@@ -57,22 +58,24 @@ main{
 }
 
 /*Miniarures de films*/
-figure{
+ul{
     overflow: hidden;
-    padding-left: 3rem;
+    margin: none;
     
 }
 
-figure figcaption{
-    padding: 4rem;
-    display:block; 
-    width: calc(100% / 1.2);  
+ul li{
+    display: inline-block;
+    
+      
 }
 
-figure figcaption img{
+ul li img{
     border-radius: 5px;
     box-shadow: 0 0 10px #000000;
-    margin: 5px;
+    height: 250px;
+	width: 250px;
+    margin: 20px;
 }
 
 /*LE BOUTON*/
