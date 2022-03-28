@@ -59,6 +59,23 @@ ul li img{
 	border-radius: 5px;
     box-shadow: 0 0 10px #000000;
 	margin: 1rem;
+    width: 150px;
+}
+
+section h2{
+    margin-bottom: 5rem ;
+}
+form{
+    margin-left: 5rem;
+    width: fit-content;
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: #413e3e;
+    color: #e9dddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ffffff;
+    border: outset .2rem var(--color-primary);
+    
 }
 
 form input, select{
@@ -68,8 +85,8 @@ form input, select{
     color: #757575;
     font-size: 13px;
     padding: 5px;
-    width: 350px;
-    margin: 2rem;
+    width: 700px;
+    margin: 1rem auto;
 	border-radius: 5px;
 }
 
@@ -78,7 +95,7 @@ form input, select{
     display: inline-block;
     background-color: #0099ff;
     border: 4px outset #0099ff;
-    color: #ffffff;
+    color: #e9dddd;
     text-align: center;
     font-size: 23px;
     padding: 7px;
@@ -87,6 +104,7 @@ form input, select{
     transition: all 0.5s;
     cursor: pointer;
     margin: 5rem;
+    margin-top: 8rem;
     
   }
  
