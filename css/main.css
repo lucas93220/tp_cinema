@@ -4,6 +4,14 @@ html {
 	font-size: 62.5%;
     box-sizing: initial;
     text-align: center;
+    font-family: 'Bebas Neue';
+}
+
+h1,h2,h3,h4,ul,ol,p,figure,blockquote{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-weight: 100;
 }
 
 /*couleurs page*/
@@ -16,7 +24,6 @@ html {
 body {
 	background-color:var(--color-default);
 	color: var(--color-text);
-	font-family: "Century Gothic", helvetica, arial, sans-serif;
 	font-size: 1.4rem; 
 	line-height: 3rem; 
     margin: 0.5rem;
@@ -27,11 +34,10 @@ header img{
     height: 150px;
 	width: 150px;
 	position: static;
-	
 	top: 10px;
   
 }
-
+/*Grand Titre*/
 header h1{
     text-align: center;
     position: relative;
@@ -39,7 +45,7 @@ header h1{
     margin-top: 5rem;
     margin-bottom: 7rem;
     font-size: 5rem;
-    font-family: 'Bebas Neue';
+ 
 }
 
 /*Sous titre*/
@@ -63,25 +69,52 @@ main{
     margin: 0 25%;
 }
 
-/*Miniarures de films*/
-ul{
-    overflow: hidden;
-    margin: none;
-    
+main .main-grid{
+    display:  grid;
+    max-width: 120rem;
+    margin: 5rem auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
 }
 
-ul li{
-    display: inline-block;
-    
-      
-}
-
-ul li img{
+figure img{
+    height:500px;
+    width: 300px;
+    vertical-align: middle;
     border-radius: 5px;
     box-shadow: 0 0 10px #000000;
-    height: 250px;
-	width: 250px;
-    margin: 20px;
+    object-fit: cover;
+
+}
+
+ul figure{
+    position: relative;
+    border: solid .1rem #1d1c1c;
+    border-radius: 5px;
+
+}
+
+/* Overley effect */
+ul figure figcaption{
+    display: grid;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    border-radius: 5px;
+    background-color: rgba(29, 29, 29, 0.6);
+    align-items: center;
+    transform: scale(0);
+    transition: all 500ms ease-in-out;
+    transform-origin: center center;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+}
+ul figure:hover figcaption{
+    transform: scale(1);
 }
 
 /*LE BOUTON*/
@@ -98,6 +131,7 @@ ul li img{
     transition: all 0.5s;
     cursor: pointer;
     margin: 5rem;
+    font-family:'Bebas Neue';
     
   }
  
