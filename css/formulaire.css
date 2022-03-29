@@ -92,13 +92,32 @@ ul li{
 
 ul li img{
 	border-radius: 5px;
-    box-shadow: 0 0 10px #000000;
-	margin: 1rem;
-    height: 250px;
-    width: 200px;
+    
+	margin: 3rem;
+    height: 350px;
+    width: 250px;
     max-width: 100%;
     max-height: 100%;
 }
+
+/* Float */
+.hvr-float {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 20px #000000;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
 
 section h2{
     margin-bottom: 5rem ;
@@ -111,7 +130,7 @@ fieldset legend{
 }
 fieldset{
     
-    width: fit-content;
+    width: 60%;
     margin: 1rem auto;
     padding: 1rem;
     background-color: #413e3e;
@@ -123,7 +142,7 @@ fieldset{
 }
 
 label{
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 form input, select{
 	display: inline-block;
@@ -132,7 +151,7 @@ form input, select{
     color: #757575;
     font-size: 1.5rem;
     padding: 5px;
-    width: 700px;
+    width: 70%;
     margin: 2rem auto;
 	border-radius: 5px;
 }
@@ -141,6 +160,7 @@ fieldset form input[placeholder]{
     font-family: 'Bebas Neue';
     transition-duration: 1s;
 }
+
 
 
 /*LE BOUTON*/
