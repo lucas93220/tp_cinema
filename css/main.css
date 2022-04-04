@@ -103,53 +103,7 @@ ul figure{
 
 }
 
-/*croix*/
-.cross {
-    width: 30px;
-    height: 30px;
-    vertical-align: -.4rem;
-    margin: 0rem auto;
-    border-radius: 5px;
-    position: relative;
-    transform: scale(1.5);
-  }
-  /*morceaux de la croix*/
-  .cross::before {
-    background: rgb(0, 0, 0);
-    position: absolute;
-    display: block;
-    content: "";
-    width: 70%;
-    height: 6%;
-    top: 47%;
-    left: 15%;
-    transform: rotate(45deg);
-  }
-  /*autre morceaux de la croix*/
-  .cross::after {
-    background: rgb(0, 0, 0);
-    position: absolute;
-    display: block;
-    content: "";
-    width: 6%;
-    height: 70%;
-    left: 47%;
-    top: 15%;
-    transform: rotate(45deg);
-  }
-  .cross:hover {
-    background: rgb(168, 167, 167);
-    box-shadow: inset 0 0 5px 1px #444;
-   
-  }
-  .cross:hover::before {
-    background: #fff;
-    box-shadow: 0px 0px 8px -1px #555;
-  }
-  .cross:hover::after {
-    background: #fff;
-    box-shadow: 0px 0px 8px -1px #555;
-  }
+
   
 /* Overley effect */
 ul figure figcaption{
@@ -209,7 +163,7 @@ ul figure:hover figcaption{
     margin-bottom: 1rem;
 }
 
-/*Description des images quand on click dessus*/
+/*Textes des images quand on click dessus*/
 .parent-modale .modale .desc{
     position: static;
     max-width: 80rem;
@@ -225,6 +179,7 @@ ul figure:hover figcaption{
     opacity: 1;
     transform-origin: center center;
 }
+/*Titre du film des images*/
 .parent-modale .modale .desc h2{
     font-size: x-large;
     font-weight: 400;
@@ -236,14 +191,17 @@ ul figure:hover figcaption{
     padding: 1rem;
 }
 
-/*bouton*/
+/*bouton pour fermer les images*/
 .parent-modale .modale button{
     position: absolute;
     top: 1.5rem;
     right: 1.5rem;
     font-size: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #000000;
     z-index: 2;
-    color: #333;
+    color: rgb(0, 0, 0);
+    background-color: #fff;
     cursor: pointer;
 }
 
@@ -284,7 +242,7 @@ ul figure:hover figcaption{
 
 
 /*2022 streaming*/
-footer{
+footer p{
     margin-top: 5rem;
     text-align: center;
 }
