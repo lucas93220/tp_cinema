@@ -7,7 +7,7 @@ html {
     font-family: 'Bebas Neue';
 }
 
-h1,h2,h3,h4,ul,ol,p,figure,blockquote{
+h1,h2,ul,p,figure{
     margin: 0;
     padding: 0;
     list-style: none;
@@ -172,12 +172,6 @@ ul figure:hover figcaption{
     background-color: #fff;
     color: #222;
     
-}
-
-.modale-active{
-    z-index: 1;
-    opacity: 1;
-    transform-origin: center center;
 }
 /*Titre du film des images*/
 .parent-modale .modale .desc h2{
