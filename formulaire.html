@@ -35,31 +35,33 @@
 <fieldset>
 <legend>Devenir membre</legend>
    <form action="formulaire.html" method="post">
+
      <div>
         <label for="nom">Nom</label> <br>
         <input type="text" id="nom" name="nom" placeholder="Nom" aria-required="true"  autofocus>
     </div>
+
     <div>
         <label for="prenom">Prénom</label> <br>
         <input type="text" id="prenom" name="prenom" placeholder="Prénom" aria-required="true">
     </div>
+
     <div>
         <label for="email">Email</label> <br>
         <input type="text" id="email" name="email" placeholder="Email" aria-required="true">
     </div>
+
     <div>
-              <label>Pays</label> <br>
-<select name="pays" id="liste-pays">
-              <option value="option">Selectionnez votre pays</option>
-</select>
+    <label for="date">Date de naissance</label> <br>
+    <input type="date" id="datetime" name="date" placeholder="date" aria-required="true">
     </div>
 
     <div>
-              <label>Ville</label> <br>
-    <select name="ville" id="list-ville">
-              <option value="option">Selectionnez votre ville</option>
-    </select>
+    <label for="phone">Téléphone</label> <br>
+    <input type="tel" id="phone" name="phone" aria-label="format à 10 chiffre" placeholder="téléphone" aria-required="true">
     </div>
+
+
 
    </form>
 </fieldset>

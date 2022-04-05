@@ -115,6 +115,8 @@ fieldset legend{
     padding: 1rem;
     color: #ffffff;
 }
+
+/*nom au dessus des cases du form*/
 fieldset{
     
     width: 60%;
@@ -125,15 +127,15 @@ fieldset{
     border-radius: 5px;
     box-shadow: 0 0 5px #ffffff;
     border: outset .2rem var(--color-primary);
-    padding-bottom: 4rem;
+    padding-bottom: 9rem;
 }
 
 label{
     font-size: 2rem;
 }
-form input, select{
+form input{
 	display: inline-block;
-    background-color: #423e3e;
+    background-color: #665e5e;
     border: 4px outset #0099ff;
     color: #757575;
     font-size: 1.5rem;
@@ -143,9 +145,16 @@ form input, select{
 	border-radius: 5px;
 }
 
+/*texte dans les cases du formulaire*/
 fieldset form input[placeholder]{
     font-family: 'Bebas Neue';
     transition-duration: 1s;
+    color: #e9dddd;
+    
+}
+
+fieldset form ::placeholder{
+    color: #e9dddd;
 }
 
 
