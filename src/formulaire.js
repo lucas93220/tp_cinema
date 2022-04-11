@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
             tel: document.getElementsByName("tel")[0],
             btn_validation: document.getElementById("submit"),
             warning: document.querySelector(".warning"),
+            valide: document.querySelector(".valide"),
             info: [],
 
             control() {
@@ -46,10 +47,12 @@ document.addEventListener("DOMContentLoaded", (e) => {
                     form.info.push(this.first_name.value, this.last_name.value, this.email.value, this.tel.value);
                     console.table(form.info);
                     localStorage.setItem('User', JSON.stringify(form.info));
-                     form.warning.classList.remove("show-warning")
+                    form.warning.classList.remove("show-warning")
+                     form.valide.classList.add("show-valide")
+                     form.valide.innerText = "Envoyée !";
                 } 
                 else{
-                   
+                    form.valide.classList.remove("show-valide")
                    form.warning.classList.add("show-warning");
                      form.warning.innerText = "Veuillez remplir tout les champs.";
                 }
