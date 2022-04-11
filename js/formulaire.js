@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", e => {
                     tel   : ${this.tel.value}
                     `);
 
+                //Stocker les donnes dans la table 
                 form.info.push(this.first_name.value, this.last_name.value, this.email.value, this.tel.value);
                 console.table(form.info);
                 localStorage.setItem('User', JSON.stringify(form.info));

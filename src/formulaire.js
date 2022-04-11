@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
 
         const form = {
-
+           
             first_name: document.getElementsByName("nom")[0],
             last_name: document.getElementsByName("prenom")[0],
             email: document.getElementsByName("email")[0],
@@ -13,7 +13,9 @@ document.addEventListener("DOMContentLoaded", (e) => {
             warning: document.querySelector(".warning"),
             valide: document.querySelector(".valide"),
             info: [],
+            
 
+            
             control() {
                 if (this.first_name.value && this.last_name.value && this.email.value && this.tel.value) {
                     console.log(`
@@ -22,7 +24,8 @@ document.addEventListener("DOMContentLoaded", (e) => {
                     email : ${this.email.value}
                     tel   : ${this.tel.value}
                     `);
-
+                    
+                    //Stocker les donnes dans la table 
                     form.info.push(this.first_name.value, this.last_name.value, this.email.value, this.tel.value);
                     console.table(form.info);
                     localStorage.setItem('User', JSON.stringify(form.info));
