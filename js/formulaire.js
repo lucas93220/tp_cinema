@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", e => {
-    var submit = document.getElementById("formulaire");
 
     const form = {
 
