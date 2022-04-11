@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
                 } 
                 else{
                     form.valide.classList.remove("show-valide")
-                   form.warning.classList.add("show-warning");
+                    form.warning.classList.add("show-warning");
                      form.warning.innerText = "Veuillez remplir tout les champs.";
                 }
             
