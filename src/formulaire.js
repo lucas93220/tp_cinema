@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
     var submit = document.getElementById("formulaire");
     
     submit.addEventListener("submit", function(event) {
-        event.preventDefault();
+    
 
         var erreur
 
@@ -22,5 +22,43 @@ document.addEventListener("DOMContentLoaded", (e) => {
         } else {
             alert('Formulaire envoyé !');
         }
+        });
+
+        const form = {
+
+            first_name: document.getElementsByName("nom")[0],
+            last_name: document.getElementsByName("prenom")[0],
+            email: document.getElementsByName("email")[0],
+            tel: document.getElementsByName("tel")[0],
+            btn_validation: document.getElementById("submit"),
+            info: [],
+
+            control() {
+                if (this.first_name.value && this.last_name.value && this.email.value && this.tel.value) {
+                    console.log(`
+                    nom : ${this.first_name.value} 
+                    prenom : ${this.last_name.value}
+                    email : ${this.email.value}
+                    tel   : ${this.tel.value}
+                    `);
+
+                    form.info.push(this.first_name.value, this.last_name.value, this.email.value, this.tel.value);
+                    console.table(form.info);
+                    localStorage.setItem('User', JSON.stringify(form.info));
+                    alert('Envoyee')
+                } 
+                else{
+                    alert('Remplissez les champs.')
+                }
+            
+            }
+    
+        }
+        
+        form.btn_validation.addEventListener("click", (e) => {
+            e.preventDefault();
+            form.control();
+        
     });
+
 });
