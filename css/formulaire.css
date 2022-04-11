@@ -68,6 +68,7 @@ main p{
 
 }
 
+
 ul{
 	overflow: hidden;
     padding-bottom: 5rem;
@@ -148,6 +149,7 @@ form input{
 /*texte dans les cases du formulaire*/
 fieldset form input[placeholder]{
     font-family: 'Bebas Neue';
+    
     transition-duration: 1s;
     color: #e9dddd;
     
@@ -156,8 +158,30 @@ fieldset form input[placeholder]{
 fieldset form ::placeholder{
     color: #e9dddd;
 }
+/*bouton form*/
+fieldset form div input[type="submit"]{
+    display: inline-block;
+    background-color: #0373be;
+    
+    color: #e9dddd;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+    width: 200px;
+    max-width: 100%;
+    max-height: 100%;
+    box-shadow: inset 0 0 5px #e9dddd;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: 5rem;
+    font-family: 'Bebas Neue';
+}
+fieldset form div input:hover, input:focus[type="submit"]{
+    background: #0099ff;
+    
+    
 
-
+}
 
 /*LE BOUTON*/
 .button {
@@ -177,7 +201,6 @@ fieldset form ::placeholder{
     margin: 5rem;
     margin-top: 8rem;
     font-family: 'Bebas Neue';
-    
   }
  
 .button:hover, .button:focus {
@@ -235,6 +258,14 @@ footer p{
         max-height: 100%;
         width: 150px ;
         height: auto;
+    }
+
+    fieldset form div input[type="submit"]{
+        max-width: 100%;
+        max-height: 100%;
+        width: 100px ;
+        height: auto;
+        font-size: 20px;
     }
 
 

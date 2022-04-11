@@ -11,16 +11,19 @@ document.addEventListener("DOMContentLoaded", (e) => {
      
     let time = new Date().getFullYear()
       footer_right.innerText+=` ${time}`
+
     /* property elements */
   
     open_modal = function () {
       console.log(this.dataset);
+      
       /* les variables */
       let image = this.dataset.image;
       let title = this.dataset.title;
       let desc = this.dataset.description;
       let dates = this.dataset.dates;
       modal.classList.add("modale-active"); /* ajouter la classe active */
+
       /* sélectionner les sélecteurs html*/
       document.querySelector(".modale img").setAttribute("src", image);
       document.querySelector(".modale .desc h2").innerText = title;

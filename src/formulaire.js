@@ -1,25 +1,26 @@
-document.addEventListener("DOMContentLoaded", e => {
-    console.log(e.target);
-    let first_name, last_name;
-    first_name = document.getElementsByName("nom")[0];
-    last_name = document.getElementsByName("prenom")[0];
-    phone = document.getElementsByName("phone")[0];
-    date = document.getElementsByName("date")[0];
+document.addEventListener("DOMContentLoaded", (e) => {
+    var submit = document.getElementById("formulaire");
+    
+    submit.addEventListener("submit", function(event) {
+        event.preventDefault();
 
-    btn_validation = document.querySelector("button");
+        var erreur
 
-    btn_validation.addEventListener("click", () => {
-        e.preventDefault();
-        //condition
-        if (first_name.value && last_name.value && phone && date) {
-            console.log(` nom : ${first_name.value}
-            prenom : ${last_name.value}
-            date : ${date.value}
-            phone : ${phone}
-            `);
+        var inputs = document.getElementsByTagName("input");
+
+        for (var i = 0; i < inputs.length; i++) {
+            if (!inputs[i].value) {
+                erreur = "Tous les champs ne sont pas remplis !";
+                break
+            }
+        }
+
+        if (erreur) {
+            event.preventDefault()
+            alert('Tous les champs ne sont pas remplis !');
+            return false;
         } else {
-            alert("Remplir les champs.");
+            alert('Formulaire envoyé !');
         }
     });
-    //console.log(btn_validation)//
 });
