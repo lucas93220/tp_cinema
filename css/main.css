@@ -66,6 +66,7 @@ section p{
     margin: auto;
     padding: 3.0rem;
     border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
     border: outset .2rem var(--color-primary);
 
 }
@@ -169,8 +170,10 @@ ul figure:hover figcaption{
     max-width: 80rem;
     max-height: 30rem;
     transition: none;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #fff;
     color: #222;
+    text-align: justify;
     
 }
 
@@ -183,28 +186,28 @@ ul figure:hover figcaption{
 .parent-modale .modale .desc h2{
     font-size: x-large;
     font-weight: 400;
+    font-family: 'Bebas Neue';
     background-color: #222;
     color: #fff;
     padding: 1rem;
 }
 .parent-modale .modale .desc p :is(time){
     padding: 1rem;
+    
 }
 
 /*bouton pour fermer les images*/
-.parent-modale .modale button{
+ .parent-modale .modale button{
     position: absolute;
     top: 1.5rem;
     right: 1.5rem;
     font-size: 2rem;
-    border-radius: 5px;
-    box-shadow: 0 0 10px #000000;
+    background-color: transparent;
+    
+    border: solid transparent;
     z-index: 2;
-    color: rgb(0, 0, 0);
-    background-color: #fff;
     cursor: pointer;
-}
-
+} 
 
 
 /*LE BOUTON*/
