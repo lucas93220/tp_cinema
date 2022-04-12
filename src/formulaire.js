@@ -1,56 +1,48 @@
-document.addEventListener("DOMContentLoaded", (e) => {
+document.addEventListener("DOMContentLoaded", e => {
 
-    
+    const form = {
 
+        first_name: document.getElementsByName("nom")[0],
+        last_name: document.getElementsByName("prenom")[0],
+        email: document.getElementsByName("email")[0],
+        tel: document.getElementsByName("tel")[0],
+        btn_validation: document.getElementById("submit"),
+        warning: document.querySelector(".warning"),
+        valide: document.querySelector(".valide"),
+        info: [],
 
-        const form = {
-           
-            first_name: document.getElementsByName("nom")[0],
-            last_name: document.getElementsByName("prenom")[0],
-            email: document.getElementsByName("email")[0],
-            tel: document.getElementsByName("tel")[0],
-            btn_validation: document.getElementById("submit"),
-            warning: document.querySelector(".warning"),
-            valide: document.querySelector(".valide"),
-            info: [],
-            
-
-            
-            control() {
-                if (this.first_name.value && this.last_name.value && this.email.value && this.tel.value) {
-                    console.log(`
+        control() {
+            if (this.first_name.value && this.last_name.value && this.email.value && this.tel.value) {
+                console.log(`
                     nom : ${this.first_name.value} 
                     prenom : ${this.last_name.value}
                     email : ${this.email.value}
                     tel   : ${this.tel.value}
                     `);
-                    
-                    //Stocker les donnes dans la table 
-                    form.info.push(this.first_name.value, this.last_name.value, this.email.value, this.tel.value);
-                    console.table(form.info);
-                    localStorage.setItem('User', JSON.stringify(form.info));
 
-                    //Alert Warning 
-                    form.warning.classList.remove("show-warning")
-                     form.valide.classList.add("show-valide")
-                     form.valide.innerText = "Envoyée !";
-                } 
+                //Stocker les donnes dans la table 
+                form.info.push(this.first_name.value, this.last_name.value, this.email.value, this.tel.value);
+                console.table(form.info);
+                localStorage.setItem('User', JSON.stringify(form.info));
 
-                 //Alert Valide
-                else{
-                    form.valide.classList.remove("show-valide")
-                    form.warning.classList.add("show-warning");
-                     form.warning.innerText = "Veuillez remplir tout les champs.";
-                }
-            
+                //Alert Warning 
+                form.warning.classList.remove("show-warning");
+                form.valide.classList.add("show-valide");
+                form.valide.innerText = "Envoyée !";
             }
-    
-        }
-         // Bouton validation formulaire
-        form.btn_validation.addEventListener("click", (e) => {
-            e.preventDefault();
-            form.control();
-        
-    });
 
+            //Alert Valide
+            else {
+                    form.valide.classList.remove("show-valide");
+                    form.warning.classList.add("show-warning");
+                    form.warning.innerText = "Veuillez remplir tout les champs.";
+                }
+        }
+
+    };
+    // Bouton validation formulaire
+    form.btn_validation.addEventListener("click", e => {
+        e.preventDefault();
+        form.control();
+    });
 });
