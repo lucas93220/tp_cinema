@@ -176,7 +176,7 @@ label{
 form input{
 	display: inline-block;
     background-color: #665e5e;
-    border: 4px outset #0099ff;
+    border: 2px outset #0099ff;
     color: #757575;
     font-size: 1.5rem;
     padding: 5px;
